@@ -6,10 +6,8 @@ export const withAddToCart=(ChildComponent:React.ComponentType<RobotProps>)=>{
     return (props)=>{
         const setState = useContext(appStateContext)
         const addToCart = (id,name) => {
-          console.log("开始点击了")
           if (setState) {
             setState((prestate) => {
-              console.log(prestate)
               return {
                 username:prestate.username,
                 shoppingCart: {
@@ -19,6 +17,6 @@ export const withAddToCart=(ChildComponent:React.ComponentType<RobotProps>)=>{
             })
           }
         }    
-        return <ChildComponent {...props}/>
+        return <ChildComponent {...props} addToCart={addToCart}/>
     }
 }

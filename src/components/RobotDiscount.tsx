@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import styles from './Robots.module.css'
-import { appContext, appStateContext } from '../AppState'
-import ShoppingCart from './ShoppingCart'
+import { appContext} from '../AppState'
 import { withAddToCart } from './addToCart'
 interface RobotProps {
   id: number;
@@ -18,7 +17,7 @@ const RobotDiscount: React.FC<RobotProps> = ({ id, name, email ,addToCart}) => {
       <h2>{name}</h2>
       <p>{email}</p>
       <p>作者名称：{value.username}</p>
-      <button onClick={()=>addToCart}>加入购物车</button>
+      <button onClick={()=>addToCart(id,name)}>加入购物车</button>
     </div>
   )
 }
