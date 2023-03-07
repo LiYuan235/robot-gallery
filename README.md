@@ -60,4 +60,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 组件都保存在src/components中。
 npm start之后，展示界面如下：
 ![1678153736127](image/README/1678153736127.png)
-点击加入购物车，购物车就会多相应的机器人;
+点击加入购物车，购物车就会多相应的机器人.
