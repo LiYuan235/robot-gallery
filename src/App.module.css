@@ -16,6 +16,10 @@
   height: 10vmin;
   pointer-events: none;
 }
+h1{
+  font-size: 72px;
+  font-family: 'Slidefu';
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .appLogo {
